@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid mt-4">
     <div class="navbar-header">
-      <a id="top" class="navbar-brand" href="/">Pitch~Application</a>
+      <a id="top text-success" class="navbar-brand" href="/">Pitch~Application</a>
     </div>
     <ul class="nav navbar-nav">
       <li><a href="/">Home</a></li>
@@ -17,11 +17,11 @@
         >
       </li>
 
-      <li><a href="{{ url_for('main.pickup')}}">Pickup lines</a></li>
+      <!-- <li><a href="{{ url_for('main.pickup')}}">Pickup lines</a></li>
       <li><a href="{{ url_for('main.interview')}}">Interview pitch</a></li>
       <li><a href="{{ url_for('main.product')}}">Product pitch</a></li>
       <li><a href="{{ url_for('main.promotion')}}">Promotion pitch</a></li>
-      <li>
+      <li> -->
         <a href="{{url_for('main.profile',my_name=current_user.username)}}">
           Profile</a
         >
@@ -30,10 +30,10 @@
       {% else %}
 
 
-      <li><a href="{{ url_for('main.pickup')}}">Pickup lines</a></li>
+      <!-- <li><a href="{{ url_for('main.pickup')}}">Pickup lines</a></li>
       <li><a href="{{ url_for('main.interview')}}">Interview pitch</a></li>
       <li><a href="{{ url_for('main.product')}}">Product pitch</a></li>
-      <li><a href="{{ url_for('main.promotion')}}">Promotion pitch</a></li>
+      <li><a href="{{ url_for('main.promotion')}}">Promotion pitch</a></li> -->
       <li><a href="{{url_for('auth.register')}}"> Register</a></li>
       <li><a href="{{url_for('auth.login')}}">Login</a></li>
       {%endif%}
