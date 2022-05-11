@@ -16,7 +16,7 @@ def register():
         user=User(username=reg_form.username.data,email=reg_form.email.data,password=reg_form.password.data)
         db.session.add(user)
         db.session.commit()
-        mail_message("Welcome to pitch Application","email/welcome",user.email,user=user)
+        # mail_message("Welcome to pitch Application","email/welcome",user.email,user=user)
         return redirect(url_for('auth.login'))
 
     return render_template('auth/register.html', reg_form=reg_form)
