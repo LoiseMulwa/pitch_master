@@ -5,7 +5,7 @@ from app.models import User
 class UserModelTest(unittest.TestCase):
 
     def setUp(self):
-        self.new_user = User(username='kibet', password='flasksApp', email='kibetdavidro@gmail.com',
+        self.new_user = User(username='mulwa', password='flasksApp', email='loisemulwa7@gmail.com',
                              biography="New Knowledge on Flask", profile_pic="xxxx")
 
     def test_password_setter(self):

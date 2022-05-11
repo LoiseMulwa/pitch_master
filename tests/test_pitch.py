@@ -5,8 +5,8 @@ from unittest import TestCase
 
 class TestPitch(unittest.TestCase):
     def setUp(self):
-        self.user_kibet= User(username='kibet', password='flasksApp', email='kibetdavidro@gmail.com',biography="New Knowledge on Flask",profile_pic="xxxx")
-        self.new_pitch = Pitch(title="Pitch", category='promotion', pitch="Get new pitch", user=self.user_kibet)
+        self.user_mulwa= User(username='mulwa', password='flasksApp', email='loisemulwa7@gmail.com',biography="New Knowledge on Flask",profile_pic="xxxx")
+        self.new_pitch = Pitch(title="Pitch", category='promotion', pitch="Get new pitch", user=self.user_mulwa)
 
 
     def tearDown(self):
